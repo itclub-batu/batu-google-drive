@@ -10,17 +10,81 @@
     <header>
         <img src="itclub.png" alt="">
         <ul>
-            <li><a href="#">soon</a></li>
+            <li><a href="index.html">home</a></li>
             <li><a href="#">soon</a></li>
             <li><a href="#">soon</a></li>
             <li><a href="#">soon</a></li>
         </ul>
 </header>
-<content>
-   
-</content>
+<content class="college">
+    <div class="select-container">
+    <select name="college" id="college">
+        <option value="null">نكنولوجيا المعلومات</option>
+          
+          <optgroup>
+            <option value="#">الصف الاول</option>
+            <option value="#"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+    <select name="college" id="college">
+        <option value="null">نكنولوجيا السكك الحديدية</option>
+          
+          <optgroup>
+            <option value="#">الصف الاول</option>
+            <option value="#"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+</div>
+<div class="select-container">
+    <select name="college" id="college">
+        <option value="null">نكنولوجيا الجرارات</option>
+          
+          <optgroup>
+            <option value="#">الصف الاول</option>
+            <option value="#"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+
+    <select name="college" id="college">
+        <option value="null">نكنولوجيا الغزل والنسيج</option>
+          
+          <optgroup>
+            <option value="#">الصف الاول</option>
+            <option value="#"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+</div>
+<div class="select-container">
+    <select name="college" id="college">
+        <option value="null">نكنولوجيا الصناعات الغذائية</option>
+          
+          <optgroup>
+            <option value="#">الصف الاول</option>
+            <option value="#"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+</div>
+    </content>
 <footer>
     <p>&copy; IT Club</p>
 </footer>
 </body>
 </html>
+<script>
+document.getElementById('college').addEventListener('change', function() {
+    var selectedOption = this.options[this.selectedIndex];
+    if (selectedOption.value !== 'null') {
+        window.location.href = selectedOption.value;
+    }
+});
+</script>
