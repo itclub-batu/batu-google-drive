@@ -7,19 +7,39 @@
     <title>كلية الصناعة والطاقة</title>
 </head>
 <body>
-    <header>
-        <img src="itclub.png" alt="">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="#">soon</a></li>
-            <li><a href="#">soon</a></li>
-            <li><a href="#">soon</a></li>
-        </ul>
+  <header>
+    <img src="itclub.png" alt="">
+    <ul>
+        <li>جامعة برج العرب التكنولوجية</li>
+    </ul>
 </header>
+
 <content class="college">
     <div class="select-container">
     <select name="college" id="college">
-        <option value="null">نكنولوجيا المعلومات</option>
+        <option value="null">برنامج تكنلوجيا المعلومات</option>
+          
+          <optgroup>
+            <option value="https://drive.google.com/drive/folders/18AhP41n5YlGDGdeq1yqZgHDxiU7TrGum">الصف الاول</option>
+            <option value="https://drive.google.com/drive/folders/1Uvq2FbQ9JyrVMTH7tVzbwfi2c9c5oPN8"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+    <select name="college" id="college">
+        <option value="null">برنامج تكنلوجيا السكك الحديديه</option>
+          
+          <optgroup>
+            <option value="https://drive.google.com/drive/folders/1NFYWc4WNFdEXRKoVQ9JgAJLReLinLaSH">الصف الاول</option>
+            <option value="https://drive.google.com/drive/folders/12V8Iq9lyWUyS6Whmviw9OCggdMR1v9V-"> الصف الثاني</option>
+          </optgroup>
+
+          
+    </select>
+</div>
+<div class="select-container">
+    <select name="college" id="college">
+        <option value="null">برنامج تكنلوجيا الجرارات والمعدات الزاعيه</option>
           
           <optgroup>
             <option value="#">الصف الاول</option>
@@ -28,8 +48,9 @@
 
           
     </select>
+
     <select name="college" id="college">
-        <option value="null">نكنولوجيا السكك الحديدية</option>
+        <option value="null">برنامج تكنلوجيا الغزل والنسيج</option>
           
           <optgroup>
             <option value="#">الصف الاول</option>
@@ -41,34 +62,11 @@
 </div>
 <div class="select-container">
     <select name="college" id="college">
-        <option value="null">نكنولوجيا الجرارات</option>
+        <option value="null">برنامج تكنلوجيا الصناعات الغذائيه</option>
           
           <optgroup>
-            <option value="#">الصف الاول</option>
-            <option value="#"> الصف الثاني</option>
-          </optgroup>
-
-          
-    </select>
-
-    <select name="college" id="college">
-        <option value="null">نكنولوجيا الغزل والنسيج</option>
-          
-          <optgroup>
-            <option value="#">الصف الاول</option>
-            <option value="#"> الصف الثاني</option>
-          </optgroup>
-
-          
-    </select>
-</div>
-<div class="select-container">
-    <select name="college" id="college">
-        <option value="null">نكنولوجيا الصناعات الغذائية</option>
-          
-          <optgroup>
-            <option value="#">الصف الاول</option>
-            <option value="#"> الصف الثاني</option>
+            <option value="https://drive.google.com/drive/folders/1BabuNp3xUUCturQSv5UALKl8uZLwkNSh">الصف الاول</option>
+            <option value="https://drive.google.com/drive/folders/16WmQCc7oWQFT-4e3_3hv4w5BvSs82HZP"> الصف الثاني</option>
           </optgroup>
 
           
@@ -78,13 +76,18 @@
 <footer>
     <p>&copy; IT Club</p>
 </footer>
+<script>
+  var collegeSelects = document.querySelectorAll('#college');
+
+  collegeSelects.forEach(function(collegeSelect) {
+    collegeSelect.addEventListener('change', function() {
+      var selectedOption = this.options[this.selectedIndex];
+      if (selectedOption.value !== 'null') {
+        window.location.href = selectedOption.value;
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
-<script>
-document.getElementById('college').addEventListener('change', function() {
-    var selectedOption = this.options[this.selectedIndex];
-    if (selectedOption.value !== 'null') {
-        window.location.href = selectedOption.value;
-    }
-});
-</script>
