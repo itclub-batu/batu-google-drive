@@ -164,8 +164,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
+footer a{
+    color: #fff;
+    text-decoration-line: none;
+}
 
-footer p {
+footer a p {
     margin: 0;
 }
 
