@@ -28,8 +28,16 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+        -webkit-tap-highlight-color: transparent !important;
     /* user-select: none !important; */
 }
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+a:focus,a:visited,a:active{
+  outline: none !important;
+}
+
 body{
     background-color: var(--bg-body);
 }
