@@ -30,5 +30,12 @@ function showAlert() {
 
         // Append the alert element to the corresponding notification element
         notificationList[index].appendChild(alertDiv);
+
+        // Set a timeout to remove the alert after 5 seconds
+        setTimeout(function() {
+            // Remove the alert element
+            alertDiv.remove();
+        }, 3000);
     });
 }
+
