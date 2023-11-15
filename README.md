@@ -1,57 +1,65 @@
-To create a README file in English that explains how to interact with the provided website, you can follow the structure below:
-
-```markdown
 # BORG AL ARAB TECHNOLOGICAL UNIVERSITY Website
 
-This repository contains the source code for the BORG AL ARAB TECHNOLOGICAL UNIVERSITY website. Below, you'll find information on the project structure and how to interact with the different pages.
+This repository contains the source code for the BORG AL ARAB TECHNOLOGICAL UNIVERSITY website. Below is a guide on how to use the website and how data is transferred using links.
 
-## Project Structure
+## Table of Contents
 
-The project is organized into several HTML files, each representing a different section of the website. Here's a brief overview:
+1. [Introduction](#introduction)
+2. [Website Structure](#website-structure)
+3. [Handling Data Transfer](#handling-data-transfer)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-1. **index.html:** This is the main landing page of the website. It includes a navigation bar, a header section, and cards representing different colleges.
+## Introduction
 
-2. **health-sciences.html:** This page displays information about the Health Sciences college, including different programs and departments.
+This website is designed for BORG AL ARAB TECHNOLOGICAL UNIVERSITY, providing information about different colleges and programs offered. The site is structured with HTML, styled with Bootstrap, and enhanced with JavaScript.
 
-3. **industry-and-energy.html:** This page provides details about the Industry and Energy college, showcasing various programs and divisions.
+## Website Structure
 
-4. **division.html:** This page is used to display information about different divisions within a program. It includes links to the first and second divisions.
+The website is organized into several HTML files, each representing a different section of the site:
 
-5. **login.html:** This page contains a login form and registration conditions.
+- `index.html`: The main landing page containing information about colleges.
+- `health-sciences.html`: Details about the Health Sciences college and its programs.
+- `industry-and-energy.html`: Information about the Industry and Energy college and its programs.
+- `division.html`: A generic template for division pages, displaying information about different academic divisions.
+- `login.html`: The login and registration page for users.
+- `script.js`: JavaScript code for page animations and handling button clicks.
 
-6. **script.js:** The JavaScript file initializes the AOS (Animate On Scroll) library and includes a function to show an alert when a specific button is clicked.
+## Handling Data Transfer
 
-## Interacting with the Website
+Data transfer between pages is facilitated using URL parameters. For example, in the link below:
 
-### 1. Navigation
-
-- The website has a navigation bar with links to different sections. You can navigate to different colleges and programs by clicking on the corresponding links.
-
-### 2. Division Details
-
-- On pages like `industry-and-energy.html` and `health-sciences.html`, there are cards representing different programs or departments. Clicking on these cards will lead you to more detailed information about each.
-
-### 3. Passing Data via Links
-
-- The website utilizes links with parameters to pass data between pages. For example:
-  ```
-  <a href="division.html?img=textile.png&url_1=https://itclub-batu.github.io/batu-google-drive/division_1.html&url_2=https://itclub-batu.github.io/batu-google-drive/division_2.html" class="p-2 text-center">
-  ```
-  In this link, parameters like `img` and `url_1` are used to dynamically update elements on the `division.html` page.
-
-### 4. AOS Library
-
-- The website incorporates the AOS library for smooth scroll animations. The animations are triggered on scroll and have a duration of 1000 milliseconds.
-
-### 5. Login and Registration
-
-- The `login.html` page includes a form for user registration. Fill in the required information, and click the "Submit" button to interact with the form.
-
-### 6. JavaScript Functionality
-
-- The `script.js` file includes a function `showAlert()` that displays a notification when buttons with the class `btn-incomplete` are clicked. The notification is removed after 3 seconds.
-
-Feel free to explore the different pages and interact with the content. If you have any questions or encounter issues, refer to the source code for additional details.
+```html
+<a href="division.html?img=textile.png&url_1=https://itclub-batu.github.io/batu-google-drive/division_1.html&url_2=https://itclub-batu.github.io/batu-google-drive/division_2.html" class="p-2 text-center">
 ```
 
-This README provides a high-level overview of the project structure and instructions for interacting with the website. Adjust the content based on the specific details and functionality of your website.
+- `img`: Specifies the image path for the division.
+- `url_1`: Represents the link for the first-year students.
+- `url_2`: Represents the link for the second-year students.
+
+These parameters are then retrieved in the destination page (`division.html`) using JavaScript, and the page elements are updated accordingly.
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/borg-al-arab-technological-university.git
+   ```
+
+2. Open the desired HTML file in a web browser to view the corresponding page.
+
+3. Explore different colleges, programs, and division pages using the navigation links.
+
+4. Check the login page (`login.html`) for registration and sign-in functionalities.
+
+## Contributing
+
+If you'd like to contribute to the development of this website, please follow the [contribution guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
