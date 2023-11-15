@@ -31,7 +31,7 @@ The website is organized into several HTML files, each representing a different 
 Data transfer between pages is facilitated using URL parameters. For example, in the link below:
 
 ```html
-<a href="division.html?img=textile.png&url_1=https://itclub-batu.github.io/batu-google-drive/division_1.html&url_2=https://itclub-batu.github.io/batu-google-drive/division_2.html" class="p-2 text-center">
+<a href="image.html?img=textile.png&url_1=https://example1.com&url_2=https://example1.com" class="p-2 text-center">
 ```
 
 - `img`: Specifies the image path for the division.
