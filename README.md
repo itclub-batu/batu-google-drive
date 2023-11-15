@@ -1,3 +1,6 @@
+To create a README file in English that explains how to interact with the provided website, you can follow the structure below:
+
+```markdown
 # BORG AL ARAB TECHNOLOGICAL UNIVERSITY Website
 
 This repository contains the source code for the BORG AL ARAB TECHNOLOGICAL UNIVERSITY website. Below, you'll find information on the project structure and how to interact with the different pages.
@@ -30,24 +33,25 @@ The project is organized into several HTML files, each representing a different 
 
 ### 3. Passing Data via Links
 
-The website employs links with parameters to facilitate data transfer between pages. For instance:
-```html
-<a href="division.html?img=textile.png&url_1=https://itclub-batu.github.io/batu-google-drive/division_1.html&url_2=https://itclub-batu.github.io/batu-google-drive/division_2.html" class="p-2 text-center">
+- The website utilizes links with parameters to pass data between pages. For example:
+  ```
+  <a href="division.html?img=textile.png&url_1=https://itclub-batu.github.io/batu-google-drive/division_1.html&url_2=https://itclub-batu.github.io/batu-google-drive/division_2.html" class="p-2 text-center">
+  ```
+  In this link, parameters like `img` and `url_1` are used to dynamically update elements on the `division.html` page.
+
+### 4. AOS Library
+
+- The website incorporates the AOS library for smooth scroll animations. The animations are triggered on scroll and have a duration of 1000 milliseconds.
+
+### 5. Login and Registration
+
+- The `login.html` page includes a form for user registration. Fill in the required information, and click the "Submit" button to interact with the form.
+
+### 6. JavaScript Functionality
+
+- The `script.js` file includes a function `showAlert()` that displays a notification when buttons with the class `btn-incomplete` are clicked. The notification is removed after 3 seconds.
+
+Feel free to explore the different pages and interact with the content. If you have any questions or encounter issues, refer to the source code for additional details.
 ```
-In this link, parameters such as `img` and `url_1` dynamically update elements on the `division.html` page.
 
-# AOS Library
-
-The website integrates the AOS library for seamless scroll animations. These animations activate on scroll and possess a duration of 1000 milliseconds.
-
-# Login and Registration
-
-The `login.html` page features a form for user registration. Complete the necessary information, and click the "Submit" button to engage with the form.
-
-# JavaScript Functionality
-
-The `script.js` file includes a `showAlert()` function that exhibits a notification upon clicking buttons with the class `btn-incomplete`. The notification disappears after 3 seconds.
-
-Feel free to explore the various pages and interact with the content. Should you have inquiries or encounter issues, consult the source code for additional information.
-
-This README offers a comprehensive overview of the project structure and guidance for navigating the website. Modify the content as per the specific details and functionality of your website.
+This README provides a high-level overview of the project structure and instructions for interacting with the website. Adjust the content based on the specific details and functionality of your website.
