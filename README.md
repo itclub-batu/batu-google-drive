@@ -45,7 +45,7 @@ These parameters are then retrieved in the destination page (`division.html`) us
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/borg-al-arab-technological-university.git
+   git clone https://github.com/itclub-batu/borg-al-arab-technological-university.git
    ```
 
 2. Open the desired HTML file in a web browser to view the corresponding page.
